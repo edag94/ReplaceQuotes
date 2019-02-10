@@ -1,6 +1,7 @@
 {
 	"name": "replacequotes",
 	"author": "Erick Dagenais",
+	"publisher": "edag94",
 	"displayName": "Replace Quotes",
 	"description": "Replaces all quotes with single or double",
 	"version": "0.0.1",
