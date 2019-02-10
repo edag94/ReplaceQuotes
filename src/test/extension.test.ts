@@ -1,22 +1,13 @@
-//
-// Note: This example test is leveraging the Mocha test framework.
-// Please refer to their documentation on https://mochajs.org/ for help.
-//
-
-// The module 'assert' provides assertion methods from node
 import * as assert from 'assert';
+import {replaceString} from '../replace';
 
-// You can import and use all API from the 'vscode' module
-// as well as import your extension to test it
-// import * as vscode from 'vscode';
-// import * as myExtension from '../extension';
-
-// Defines a Mocha test suite to group tests of similar kind together
-suite("Extension Tests", function () {
-
-    // Defines a Mocha unit test
-    test("Something 1", function() {
-        assert.equal(-1, [1, 2, 3].indexOf(5));
-        assert.equal(-1, [1, 2, 3].indexOf(0));
+suite("Extension Tests", () => {
+    //Double to Single Quotes
+    test('Replace Works', () => {
+        const stringToReplace = '"?"?"//\""/\?//"///\\\///\/\/\"\/\/\/\/\"\/\/\?/\"?//\"?"\/"\?\"';
+        const SingleQuotesOnly = replaceString(stringToReplace,"\"","\'");
+        const foundAt = SingleQuotesOnly.search("\"");
+        assert.equal(-1,foundAt);
+        console.log("Replace to Single Quotes only passed!");
     });
 });

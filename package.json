@@ -1,7 +1,8 @@
 {
 	"name": "replacequotes",
+	"author": "Erick Dagenais",
 	"displayName": "Replace Quotes",
-	"description": "replaces all quotes with single or double",
+	"description": "Replaces all quotes with single or double",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.31.0"
