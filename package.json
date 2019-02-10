@@ -4,6 +4,7 @@
 	"publisher": "edag94",
 	"displayName": "Replace Quotes",
 	"description": "Replaces all quotes with single or double",
+	"repository": "https://github.com/edag94/ReplaceQuotes.git",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.31.0"
