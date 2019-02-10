@@ -32,9 +32,8 @@ export default (textEditor: vscode.TextEditor, ToSingle : boolean) => {
 }
 
 function replaceString(str: string, replacee: string, replacement: string) : string {
-    const regexStr = '/' + replacee + '/';
     const regexFlags = 'g';
-    const regex = new RegExp(regexStr, regexFlags);
+    const regex = new RegExp(replacee, regexFlags);
 
     const replaced = str.replace(regex, replacement);
     return replaced;

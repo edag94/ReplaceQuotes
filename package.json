@@ -10,19 +10,18 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.replaceSingle",
-		"onCommand:extension.replaceDouble"
-		
+		"onCommand:extension.ReplaceSingle",
+		"onCommand:extension.ReplaceDouble"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.replaceSingle",
+				"command": "extension.ReplaceSingle",
 				"title": "Replace Single"
 			},
 			{
-				"command": "extension.replaceDouble",
+				"command": "extension.ReplaceDouble",
 				"title": "Replace Double"
 			}
 		]

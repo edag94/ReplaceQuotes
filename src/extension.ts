@@ -22,18 +22,14 @@ export function activate(context: vscode.ExtensionContext) {
 		} 
 		
 	});
-	const ReplaceDouble = vscode.commands.registerCommand('extension.ReplaceSingle', () => {
+	const ReplaceDouble = vscode.commands.registerCommand('extension.ReplaceDouble', () => {
 		if (vscode.window.activeTextEditor !== undefined){
 			const textEditor = vscode.window.activeTextEditor;
 			replaceQuotes(textEditor,false);
 		} 
 	});
 
-	const commands = [ReplaceSingle,ReplaceDouble];
-
-	for (const command of commands){
-		context.subscriptions.push(command);
-	}
+	context.subscriptions.push(ReplaceSingle, ReplaceDouble);
 }
 
 // this method is called when your extension is deactivated
